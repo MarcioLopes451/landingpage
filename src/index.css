@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 :root {
   --white: hsl(0, 0%, 98%);
-  --gray: hsl(0, 0%, 41%);
+  --gray: #686868;
   --black: hsl(0, 0%, 8%);
 
   --font-family--primary: 'Epilogue', sans-serif;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
-  --font-size-para: 18px;
+  --font-size-para: 14px;
 }
 
 /* Box sizing rules */
