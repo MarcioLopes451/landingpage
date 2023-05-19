@@ -86,6 +86,7 @@
 .menu-icon {
   display: none;
 }
+
 @media screen and (max-width: 400px) {
   .login-register {
     display: none;
@@ -99,13 +100,41 @@
     align-items: center;
     margin: 1rem;
   }
+  .nested-links {
+    display: none;
+  }
   .nav a img {
     width: 87px;
     height: 30px;
   }
+
+  /* mobile menu */
+
   .menu-icon {
     display: block;
+    cursor: pointer;
   }
+  .open-mobile{
+    height: 900px;
+    width: 240px;
+    background: var(--white);
+    position: absolute;
+    z-index: 9;
+    left: 135px;
+    top: 0px;
+  }
+.open-nav img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 200px;
+  top: 21px;
+}
+.open-links {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
 }
 
 /* hero section */

@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import Logo from '../../images/logo.svg';
-import Menu from '../../images/icon-menu.svg';
 import Todo from '../../images/icon-todo.svg';
 import Calender from '../../images/icon-calendar.svg';
 import Reminder from '../../images/icon-reminders.svg';
 import Planning from '../../images/icon-planning.svg';
 import ArrowUp from '../../images/icon-arrow-up.svg';
 import ArrowDown from '../../images/icon-arrow-down.svg';
+import MobileNav from './MobileNav';
 
 
 export default function Navbar() {
@@ -43,7 +43,7 @@ function handleOpen1(){
             <p>Login</p>
             <button>Register</button>
             </div>
-          <img src={Menu} alt='menu' className='menu-icon' />
+          <MobileNav />
         </div>
         {open ? (
               <ul className='nested-lists'>
