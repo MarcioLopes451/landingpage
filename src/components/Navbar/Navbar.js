@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Logo from '../../images/logo.svg';
 import Todo from '../../images/icon-todo.svg';
 import Calender from '../../images/icon-calendar.svg';
@@ -19,7 +19,6 @@ function handleOpen(){
 function handleOpen1(){
   setOpen1(!open1);
 }
-
 
   return (
     <header className='headerOne'>
@@ -43,7 +42,9 @@ function handleOpen1(){
             <p>Login</p>
             <button>Register</button>
             </div>
-          <MobileNav />
+            <div className='mobile-navi'>
+            <MobileNav />
+            </div>
         </div>
         {open ? (
               <ul className='nested-lists'>

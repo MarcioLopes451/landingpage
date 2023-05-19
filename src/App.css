@@ -61,6 +61,10 @@
   text-decoration: none;
   color: var(--gray);
 }
+.links:hover, 
+.nested-lists li:hover{
+  color: var(--black);
+}
 .nested-links{
   border: none;
   background: none;
@@ -69,6 +73,9 @@
   display: flex;
   align-items: center;
   gap: 9px;
+}
+.nested-links:hover {
+  color: var(--black);
 }
 .login-register {
   display: flex;
@@ -86,8 +93,14 @@
 .menu-icon {
   display: none;
 }
+.mobile-navi {
+  display: none;
+}
 
 @media screen and (max-width: 400px) {
+  .mobile-navi {
+    display: block;
+  }
   .login-register {
     display: none;
   }
@@ -123,7 +136,7 @@
     left: 135px;
     top: 0px;
   }
-.open-nav img {
+.close-btn {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -134,6 +147,60 @@
   margin-top: 80px;
   display: flex;
   flex-direction: column;
+  line-height: 2rem;
+  padding-left: 24px;
+}
+.mobile-links {
+  border: none;
+  background: none;
+  color: var(--gray);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-para);
+}
+.mobile-lists {
+  text-decoration: none;
+  color: var(--gray);
+}
+.mobile-buttons {
+  margin-top: 2rem;
+  display: block;
+  align-items: center;
+  color: var(--gray);
+  text-align: center;
+  font-size: var(--font-size-para);
+}
+.mobile-buttons button {
+  background: none;
+  margin-top: 1rem;
+  border: 0.13rem solid var(--gray);
+  width: 195px;
+  height: 40px;
+  border-radius: 1rem;
+  color: var(--gray);
+}
+.mobile-nested li {
+  font-family: var(--font-family--primary);
+  color: var(--gray);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: var(--font-size-para);
+  margin-top: 1rem;
+  margin-left: 47px;
+}
+.mobile-links-two li {
+  font-family: var(--font-family--primary);
+  color: var(--gray);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-para);
+  margin-top: 1rem;
+  margin-left: 47px;
+  line-height: 1rem;
 }
 }
 
@@ -169,6 +236,11 @@
   background: var(--black);
   color: var(--white);
   border-radius: 1rem;
+  cursor: pointer;
+}
+.intro button:hover {
+background: var(--white);
+color: var(--black);
 }
 .hero-image {
   margin-right: 130px;
