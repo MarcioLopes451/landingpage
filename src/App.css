@@ -133,7 +133,7 @@
     background: var(--white);
     position: absolute;
     z-index: 9;
-    left: 135px;
+    left: 150px;
     top: 0px;
   }
 .close-btn {
